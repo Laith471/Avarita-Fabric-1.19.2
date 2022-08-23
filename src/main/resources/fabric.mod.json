@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "avaritia",
+  "version": "${version}",
+
+  "name": "Avaritia",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Laith"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.laith.avaritia.Avaritia"
+    ],
+    "client": ["net.laith.avaritia.AvaritiaClient"]
+  },
+  "mixins": [
+    "avaritia.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
